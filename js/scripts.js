@@ -102,7 +102,7 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["bN2hrTIAF-o", "ngW6nyk5PhM", "oNyXYPhnUIs", "ywQfhsKzvO0", "sD7UarDxcv0", "9ENjz7Ian9c", "Cnoyhig5npc", "KXK1at-udX8"];
+const videoIds = ["jjftb9LVe5o", "WfuTipCqs4A", "siSnPCwRX54", "UK13a1yryVg", "pm7WEyFpg2g", "Sx0xOgFDXFg", "tLUHE_T34A8", "BmVPaguzZqs"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
