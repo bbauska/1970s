@@ -1,4 +1,4 @@
-/** js/scripts.js of bbauska/1980s making 1970s.bauska.org */
+/** js/scripts.js of bbauska/1970s making 1970s.bauska.org */
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
