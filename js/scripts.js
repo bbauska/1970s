@@ -91,7 +91,19 @@ class VCREffect {
     }
   }
 }
-
+/*
+https://www.youtube.com/shorts/XJIQeXDfOwE commercials from the 70s
+https://youtu.be/-J5PNGGLgKI  land of the lost
+https://youtu.be/UK13a1yryVg  all in the family
+https://youtu.be/a3_QlasXQWY  welcome back kotter
+https://youtu.be/a3_QlasXQWY  get smart
+https://youtu.be/fqKEENAGSBo  the fantastic voyage 1977
+https://youtu.be/viUbVn0-ZQw  the amazing spiderman
+https://youtu.be/8UfS72PBfY8  mccloud
+https://youtu.be/FOYnDtO4H1w  the life and times of grizzly adams
+https://youtu.be/2-VQ2uyiYLo  cheers
+https://youtu.be/yuEBBwJdjhQ  snl word association richard prior
+*/
 // Usage
 const canvas = document.getElementById("canvas");
 const vcrEffect = new VCREffect(canvas, {
@@ -102,7 +114,7 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["jjftb9LVe5o", "WfuTipCqs4A", "siSnPCwRX54", "UK13a1yryVg", "pm7WEyFpg2g", "Sx0xOgFDXFg", "tLUHE_T34A8", "BmVPaguzZqs"];
+const videoIds = ["UK13a1yryVg", "WfuTipCqs4A", "-J5PNGGLgKI", "a3_QlasXQWY", "fqKEENAGSBo", "viUbVn0-ZQw", "XJIQeXDfOwE", "2-VQ2uyiYLo", "yuEBBwJdjhQ", "-J5PNGGLgKI"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -117,5 +129,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 20000); 
+  setTimeout(switchToNextVideo, 10000); 
 });
