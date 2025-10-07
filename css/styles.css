@@ -9,8 +9,6 @@ body {
   overflow: hidden;
   position: relative;
 }
-/**  background: url(../images/base.jpg");  **/
-/** background-image: url(https://alexandrevacassin.fr/codepen/old-tv/base.webp);  */
 .tv-screen {
   position: absolute;
   width: 90vw;
@@ -44,7 +42,6 @@ video, iframe {
   max-height: 100%;
   filter: contrast(1.2) brightness(1.1);
 }
-/**  background-image: url(https://github.com/bbauska/1970s/blob/main/images/Television_static.gif);  **/
 .glitch {
   pointer-events: none;
   position: absolute;
@@ -90,8 +87,6 @@ canvas {
   max-height: 100%;
 }
 
-/**  background-image: url(https://github.com/bbauska/1970s/blob/main/images/Television_static.gif");  **/
-/**  background: url(https://upload.wikimedia.org/wikipedia/commons/0/02/Television_static.gif);  **/
 .snow-effect {
   position: absolute;
   top: 0;
