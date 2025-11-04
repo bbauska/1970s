@@ -92,16 +92,16 @@ class VCREffect {
   }
 }
 /* 1970's video nostalgia;
- 1. https://youtu.be/-J5PNGGLgKI  land of the lost
- 2. https://youtu.be/UK13a1yryVg  all in the family
- 3. https://youtu.be/a3_QlasXQWY  welcome back kotter
- 4. https://youtu.be/a3_QlasXQWY  get smart
- 5. https://youtu.be/fqKEENAGSBo  the fantastic voyage 1977
- 6. https://youtu.be/viUbVn0-ZQw  the amazing spiderman
- 7. https://youtu.be/8UfS72PBfY8  mccloud
- 8. https://youtu.be/FOYnDtO4H1w  the life and times of grizzly adams
- 9. https://youtu.be/2-VQ2uyiYLo  cheers
-10. https://youtu.be/yuEBBwJdjhQ  snl word association richard prior
+ 1. https://youtu.be/-J5PNGGLgKI  land of the lost (1974-1977)
+ 2. https://youtu.be/UK13a1yryVg  all in the family (1971-1979)
+ 3. https://youtu.be/a3_QlasXQWY  welcome back kotter (1975-1979)
+ 4. https://youtu.be/XJIQeXDfOwE  get smart (1965-1970)
+ 5. https://youtu.be/fqKEENAGSBo  the fantastic voyage (1966)
+ 6. https://youtu.be/viUbVn0-ZQw  the amazing spiderman (1977-1979)
+ 7. https://youtu.be/8UfS72PBfY8  mccloud (1970-1977)
+ 8. https://youtu.be/FOYnDtO4H1w  the life and times of grizzly adams (1977-1978)
+ 9. https://youtu.be/2-VQ2uyiYLo  cheers (1982-1993)
+10. https://youtu.be/yuEBBwJdjhQ  snl word association richard prior (1975-present)
 */
 // Usage
 const canvas = document.getElementById("canvas");
@@ -113,8 +113,8 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["-J5PNGGLgKI", "UK13a1yryVg", "a3_QlasXQWY", "XJIQeXDfOwE", "fqKEENAGSBo", "viUbVn0-ZQw", 
-                  "8UfS72PBfY8", "FOYnDtO4H1w", "2-VQ2uyiYLo", "yuEBBwJdjhQ", "-J5PNGGLgKI"];
+const videoIds = ["-J5PNGGLgKI", "UK13a1yryVg", "a3_QlasXQWY", "XJIQeXDfOwE", "fqKEENAGSBo", 
+                  "viUbVn0-ZQw", "8UfS72PBfY8", "FOYnDtO4H1w", "2-VQ2uyiYLo", "yuEBBwJdjhQ"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -129,5 +129,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 23000); 
+  setTimeout(switchToNextVideo, 10000); 
 });
