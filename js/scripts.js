@@ -91,18 +91,17 @@ class VCREffect {
     }
   }
 }
-/*
-https://www.youtube.com/shorts/XJIQeXDfOwE commercials from the 70s
-https://youtu.be/-J5PNGGLgKI  land of the lost
-https://youtu.be/UK13a1yryVg  all in the family
-https://youtu.be/a3_QlasXQWY  welcome back kotter
-https://youtu.be/a3_QlasXQWY  get smart
-https://youtu.be/fqKEENAGSBo  the fantastic voyage 1977
-https://youtu.be/viUbVn0-ZQw  the amazing spiderman
-https://youtu.be/8UfS72PBfY8  mccloud
-https://youtu.be/FOYnDtO4H1w  the life and times of grizzly adams
-https://youtu.be/2-VQ2uyiYLo  cheers
-https://youtu.be/yuEBBwJdjhQ  snl word association richard prior
+/* 1970's video nostalgia;
+ 1. https://youtu.be/-J5PNGGLgKI  land of the lost
+ 2. https://youtu.be/UK13a1yryVg  all in the family
+ 3. https://youtu.be/a3_QlasXQWY  welcome back kotter
+ 4. https://youtu.be/a3_QlasXQWY  get smart
+ 5. https://youtu.be/fqKEENAGSBo  the fantastic voyage 1977
+ 6. https://youtu.be/viUbVn0-ZQw  the amazing spiderman
+ 7. https://youtu.be/8UfS72PBfY8  mccloud
+ 8. https://youtu.be/FOYnDtO4H1w  the life and times of grizzly adams
+ 9. https://youtu.be/2-VQ2uyiYLo  cheers
+10. https://youtu.be/yuEBBwJdjhQ  snl word association richard prior
 */
 // Usage
 const canvas = document.getElementById("canvas");
@@ -114,7 +113,8 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["UK13a1yryVg", "WfuTipCqs4A", "-J5PNGGLgKI", "a3_QlasXQWY", "fqKEENAGSBo", "viUbVn0-ZQw", "XJIQeXDfOwE", "2-VQ2uyiYLo", "yuEBBwJdjhQ", "-J5PNGGLgKI"];
+const videoIds = ["-J5PNGGLgKI", "UK13a1yryVg", "a3_QlasXQWY", "XJIQeXDfOwE", "fqKEENAGSBo", "viUbVn0-ZQw", 
+                  "8UfS72PBfY8", "FOYnDtO4H1w", "2-VQ2uyiYLo", "yuEBBwJdjhQ", "-J5PNGGLgKI"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -123,7 +123,7 @@ function switchToNextVideo() {
   snowEffect.style.opacity = 1;
   setTimeout(() => {
     currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
-    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=1&mute=1`;
+    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=0&mute=1`;
     snowEffect.style.opacity = 0;
   }, 2000); // 2 seconds of static before switching
 }
